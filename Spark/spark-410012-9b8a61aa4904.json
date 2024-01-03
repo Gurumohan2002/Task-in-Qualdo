@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "spark-410012",
+  "private_key_id": "9b8a61aa4904ef6aa8d8cfea76cb2f5e008addcd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCuR/oqTzmR1JGs\n9ON5OMxAXclxYkiv+taGrbPhqJmPrt5KuDDOvVhSu13EY8mbGxj0Rrk+23ekjfhk\nXqiOzNVhrFU7TAKdGCjhopsK0a34ZMT+vWRRmaoHEd5FAx+kjlj9v2DGZ2XijIg4\nn7VwPn+FRbiw8KPgNU/O/gN7dV5S6hLUG5vfVxBP0IR4DxCZky8yTzkYzyvweQ6w\nf/udt/fgoeQTvM5w8ufJ47Vl/u/3RCLlj977LfDr5VB0gjEFuZOcy7ZMbpSKBdbZ\n+WQOruNWeBQ76ZBfLrSrLV4Fp+OF4yGCUzjt/YRdWVeOrzKVDxJwYFETh/Db2oW+\ny+SS3S99AgMBAAECggEAASR2C1j0zUC4Q736aVnQXPINPZg7Vov6ZAYERXJpfBU7\nxJme5RWj3C1f2MdR4JmcEqqnN2l3SBwPu/iy4I/1kuvvExhu2/P2/XB0O7nsJGvk\nrrBnIlgzhe0kDw4m/Ixb7cd9xujFAWf40wYylkdfZp9yYONZVg4dAjcmc35T3Y9D\nrP5gOBK9GBZyitXycXk+WoS0XpS+8ycb8hMQFNc9zVmOe4bW6BeymbrARsfSXB7A\nogyY7zttcJWYhFHE6VJI2zmvy61/ezoJTIYofsgv8fiwrSLlI39oYk/qnJ+y5dGu\nl3AXzVqd96CEN5/07pVYNap6TKJ7wFXJAm5sp+s/AQKBgQDUmYuBTBFxgrB0VQ+e\nfkt5sdkAXvJlPA3cMznPcfXnzmsYYjpsImsifCF9dARwYOO9q8Eu4sOxDnKvJRJV\n0TMz2ePIhV4pttCduXw5Z3lZi9EraNRYQ7jvqRWO5TFJCD8nI7SCimfTc6Hj1I4T\nxrjNYkZexu7MzHFJEil9IIofkQKBgQDR2+cZHap3dLpiUmDjb16x1HMSD3wK77xM\n9QuuX6XKmBQYRuOdlHyhpw3GhqhMnN1TG/59MAkTC8mw2rUzdsqthVLSRJ/vZhZm\nUeo0lK/caIuWsX2yJw1wFIGRTsI184WzJbhufr8X+lobcv526omFhop5Q4z+JlTj\n3/skQy/zLQKBgAjyZUKNtvY178MViVC8M+TtLRqs5DqKanLn3Pjz7MtSjoM6Lwc5\n85RB8Q7cgQtRqIPk5H5aoK2k1AK25qyh3yvBcaqQokPTI7hfg/DOf/bawXS4Nqd4\nQiIj1Xpr/sT6Cd5VzFTqCjCF3zw9R7VhWYmbJyb57DbGK8ZNc12GrwlhAoGBAK5P\nDBXleSj9kK6IJCfk4m+sueN/bxWaaPo283vjwE6VoONFRlwl8JtIqX2DbZktFfyp\nHOmYk4D5Yo5+KtHTUqdsPQ2fqIRtdB+K3JDOC4B0abVCOdhW7adxsOkj1NaBLkVO\nCHHm3wyoil2QV2Iojw+UX8I3ZI3ZAtu/t9c340UFAoGAHo9lnK1jy6ZdPbhR3lYD\n6SO44g+BFrL0Y70jz70jIPmISERx9AG27vXvcBuFHpG7HcR91Kvp7yAqb3ILY9Eb\nWEsfx7uaIx53nY7TaocqGxAfMaG3hYnyg0SrSL3EzzNkbzzcfK1mrVPiNsC3NW9V\nItzUPzXVeEKeN+yCsZ7zwQw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "spark-cloud@spark-410012.iam.gserviceaccount.com",
+  "client_id": "108381917072489273839",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/spark-cloud%40spark-410012.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
