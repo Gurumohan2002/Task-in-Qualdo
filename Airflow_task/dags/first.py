@@ -1,5 +1,5 @@
 from airflow import DAG
-from airflow.operators.python_operator import PythonOperator
+from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
 from airflow.models import Variable
 from funct import get_user_input,print_word_lengths
