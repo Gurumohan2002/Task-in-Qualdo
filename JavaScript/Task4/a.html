@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LIST AND DICTIONARY</title>
+  </head>
+  <body>
+    <h2>List and Dictionary Task</h2>
+    <div id="demo"></div>
+    <script>
+      let result = "The given list : " + "<br>[<br>";
+      const list_dict = [
+        { Name: "Guru", Selected: false, Address: "Trichy" },
+        { Name: "Srini", Selected: true, Address: "Salem" },
+        { Name: "Roshini", Selected: true, Address: "Dharmapuri" },
+      ];
+      for (let i = 0; i < list_dict.length; i++) {
+        result += "{";
+        for (const key in list_dict[i]) {
+          result += " " + key + " : " + list_dict[i][key] + " , ";
+        }
+        result += " }<br>";
+      }
+      result += "]<br>";
+      result += "The dictionary with Selected key as true are : " + "<br>[";
+      const new_list_dict = list_dict.filter((dict) => dict.Selected == true);
+      if (new_list_dict != [] || new_list_dict != {}) {
+        for (let i = 0; i < new_list_dict.length; i++) {
+          result += "{";
+          for (const key in new_list_dict[i]) {
+            result += " " + key + " : " + new_list_dict[i][key] + " <br>";
+          }
+          result += " }<br>";
+        }
+        result += "]<br>";
+      } else {
+        result += "No Dictionary found with Selected key value as true.";
+      }
+      document.getElementById("demo").innerHTML = result;
+    </script>
+  </body>
+</html>

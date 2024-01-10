@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LIST AND DICTIONARY</title>
+  </head>
+  <body>
+    <h2>List and Dictionary</h2>
+    <div id="demo"></div>
+    <script>
+      const list = [];
+      let result = "The Dictionary :<br>";
+      function addDicttoList() {
+        if (list.length < 10) {
+          const dict = {};
+          for (let i = 0; i <= 5; i++) {
+            dict[`key${i}`] = `value${i}`;
+          }
+          list.push(dict);
+          result += "The Dictionary added Successfully ! " + "<br>";
+        } else {
+          result += "The List contains 10 Dictionaries in it !" + "<br>";
+        }
+      }
+      for (let j = 0; j < 11; j++) {
+        addDicttoList();
+      }
+
+      result += list;
+      document.getElementById("demo").innerHTML = result;
+    </script>
+  </body>
+</html>

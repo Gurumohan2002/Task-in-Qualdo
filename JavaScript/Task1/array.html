@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT STRING METHODS</title>
+  </head>
+  <body>
+    <form>
+      <h1>String Methods</h1>
+      <!-- Form for User Input -->
+      <form id="arrayMethodsForm">
+        <label for="userInput">Enter a Array:</label>
+        <input type="text" id="userInput" required />
+        <br /><br />
+        <button type="button" onclick="ArrayMethods()">Click me</button>
+      </form>
+      <div id="array"></div>
+    </form>
+    <script>
+      function ArrayMethods() {
+        // user input
+        let userInput = document.getElementById("userInput").value;
+
+        // checking for the valid array or not
+        if (userInput.length === "") {
+          alert("Please enter a valid array (comma-separated values).");
+          return;
+        }
+
+        // Converting the user input to an array
+        let userArray = userInput.split(",");
+
+        // Array methods
+        let len = userArray.length;
+        let tostring = userArray.toString();
+        let elementAt2 = userArray.at(1);
+        let add_AtEnd = userArray.join("_");
+        let add_element = userArray.push("new");
+        let unShiftMethod = userArray.unshift("new1");
+
+        document.getElementById("array").innerHTML = `
+                <p>Original Array     : ${userInput}</p>
+                <p>Array length       : ${len}</p>
+                <p>Convert to String   : ${tostring}</p>
+                <p>Element at 2       : ${elementAt2}</p>
+                <p>Adding _ at End    : ${add_AtEnd}</p>
+                <p>Adding new element : ${userArray}</p>
+                <p>Array after shift  : ${userArray.join(
+                  ",",
+                  unShiftMethod
+                )}</p>
+            `;
+      }
+    </script>
+  </body>
+</html>

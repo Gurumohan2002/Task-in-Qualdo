@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK 3 A</title>
+  </head>
+  <body>
+    <h2>Task 3 a</h2>
+    <div id="demo"></div>
+
+    <script>
+      const arr = ["asdfde", "fgiuiu", "fuyyyeew", "guyeer", "gsugdfd"];
+      let result = "The length of the array is : ";
+      result += arr.length + "<br>"+"The elements in the array : " + arr +"<br>";
+      const arr1 = [];
+      const arr2 = [];
+      let j = 0;
+      let k = 0;
+      for (let i = 0; i < arr.length; i++) {
+        if (i % 2 == 0) {
+          arr1[j] = arr[i];
+          j = j + 1;
+        } else {
+          arr2[k] = arr[i];
+          k = k + 1;
+        }
+      }
+      result +=
+        "The even index elements from the array : " +
+        arr1 +
+        "<br>" +
+        "The odd index elements from the array : " +
+        arr2 +
+        "<br>";
+      for (let i = 1; i < arr.length; i = i + 1) {
+        arr.splice(i, 1);
+      }
+      result +=
+        "The Even index elements after removing odd index elements from the array : " +
+        arr +
+        "<br>";
+      arr.push("fdytdwwe");
+      arr.push("hsdhewew");
+      result +=
+        "The array after adding two more elements in the end : " + arr + "<br>";
+      arr.sort();
+      result += "The array after sorting in ascending order : " + arr + "<br>";
+      document.getElementById("demo").innerHTML = result;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STRING OPERATIONS</title>
+  </head>
+  <body>
+    <h2>String Operations</h2>
+    <div id="demo"></div>
+    <script>
+      const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+      function generateString(length) {
+        let result = "The String Value is : ";
+        res1 = "";
+        const charactersLength = characters.length;
+        for (let i = 0; i < length; i++) {
+          res1 += characters.charAt(
+            Math.floor(Math.random() * charactersLength)
+          );
+        }
+        const myArr = res1.split("");
+        text = "";
+        for (let i = 0; i < myArr.length; i++) {
+          text += myArr[i] + "";
+        }
+        text1 = text.split("").sort().join("");
+        let text2 = "";
+        for (let i = 0; i < myArr.length; i++) {
+          text2 += text1[i] + " $ ";
+        }
+
+        result += res1 + "<br>" + text2;
+
+        document.getElementById("demo").innerHTML = result;
+      }
+      generateString(10);
+    </script>
+  </body>
+</html>
