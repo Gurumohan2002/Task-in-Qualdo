@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT LOOPING</title>
+  </head>
+  <body>
+    <h1>Looping</h1>
+    <div id="looping"></div>
+    <script>
+      function Looping() {
+        let result = "";
+
+        for (let i = 0; i < 5; i++) {
+          result += "Number : " + i + "<br>";
+        }
+
+        result += "<br>";
+
+        let j = 1;
+        do {
+          result += "Number : " + j + "<br>";
+          j++;
+        } while (j < 5);
+
+        result += "<br>";
+
+        const array = [1, 2, 3, 4, 5];
+        for (let i = 0; i < array.length; i++) {
+          result += "Number : " + array[i] + "<br>";
+        }
+
+        result += "<br>";
+
+        for (let i = 1; i <= 10; i++) {
+          if (i === 5) {
+            break;
+          }
+          if (i % 2 === 0) {
+            continue;
+          }
+          result += "Number : " + i + "<br>";
+        }
+
+        document.getElementById("looping").innerHTML = result;
+      }
+
+      Looping();
+    </script>
+  </body>
+</html>

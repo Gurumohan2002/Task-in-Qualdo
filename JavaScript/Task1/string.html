@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT STRING METHODS</title>
+  </head>
+  <body>
+    <form>
+      <h1>String Methods</h1>
+      <!-- Form for User Input -->
+      <form id="stringMethodsForm">
+        <label for="userInput">Enter a text:</label>
+        <input type="text" id="userInput" required />
+        <br /><br />
+        <button type="button" onclick="StringMethods()">Click me</button>
+      </form>
+      <div id="string"></div>
+    </form>
+    <script>
+      function StringMethods() {
+        // user input
+        let userInput = document.getElementById("userInput").value;
+
+        // checking for a valid string or not
+        if (userInput.length === "") {
+          alert("Please enter a valid string.");
+          return;
+        }
+
+        // String methods
+        let len = userInput.length;
+        let thirdString = userInput.charAt(2);
+        let thirdStringCode = userInput.charCodeAt(2);
+        let threeToSix = userInput.slice(3, 7);
+        let upperInput = userInput.toUpperCase();
+        let doubleInput = userInput.concat(" ", upperInput);
+        let replace_d_to_e_from_userInput = userInput.replaceAll("d", "e");
+
+        // Printing the result
+        document.getElementById("string").innerHTML = `
+                <p>Original Text                      : ${userInput}</p>
+                <p>Length of given text               : ${len}</p>
+                <p>Third Character                    : ${thirdString}</p>
+                <p>Third Character Code               : ${thirdStringCode}</p>
+                <p>Character from three to six        : ${threeToSix}</p>
+                <p>Text to Upper                      : ${upperInput}</p>
+                <p>Concating the input with Upper     : ${doubleInput}</p>
+                <p>Replacing the d with e in Text     : ${replace_d_to_e_from_userInput}</p>
+            `;
+      }
+    </script>
+  </body>
+</html>

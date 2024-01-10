@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT FUNCTIONS</title>
+  </head>
+
+  <body>
+    <h2>Javascript functions</h2>
+    <button onclick="checkNumber()">Check Number is Odd or Even</button>
+    <div id="demo"></div>
+
+    <script>
+      function ifElse() {
+        // Get user input
+        const userInput = prompt("Enter a number:");
+        const userNumber = parseFloat(userInput);
+
+        if (isNaN(userNumber)) {
+          alert("Invalid input. Please enter a valid number.");
+        } else {
+          if (userNumber % 2 === 0) {
+            return "Even Number";
+          } else {
+            return "Odd Number";
+          }
+        }
+      }
+
+      function checkNumber() {
+        const result = ifElse();
+        document.getElementById("demo").innerText = result;
+      }
+    </script>
+  </body>
+</html>
