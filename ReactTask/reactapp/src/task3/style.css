@@ -1,0 +1,31 @@
+/*json.css*/
+
+.json {
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+  }
+  
+  .json th, .json td { 
+    border: 1px solid #ddd;
+    padding: 8px;
+   
+    text-align: left;
+  }
+  
+  .json th {
+  
+    background-color: #bebbbb;
+  }
+  
+  .json tbody tr:nth-child(even) {
+    background-color: #ffffff;
+
+  }
+  
+  .json tbody tr:hover {  
+    
+    background-color: #eaf1f0;
+  }
+  
