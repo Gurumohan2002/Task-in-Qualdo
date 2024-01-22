@@ -1,0 +1,18 @@
+#center {
+  border-collapse: collapse; 
+ 
+}
+
+th, td {
+  padding: 10px; 
+  border: 1px solid #292424;
+}
+
+thead {
+  background-color: #26cdfc;
+}
+
+td:nth-child(2) {
+  text-align: center; 
+}
+

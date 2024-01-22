@@ -44,6 +44,15 @@ def handle_exceptions(func):
             return jsonify({"error": str(e)}), 400
     return wrapper
 
+@app.route('/')
+def hello():
+   try:
+      return "<html><body><h1> Hello To Web Page </h1></body></html>"
+   except Exception as e:
+      print(f"An error occurred: {e}")
+      return "<html><body> <h1> An unexpected error occurred. </h1></body></html>"
+
+
 #API for Displaying the employee details using GET method
 @app.route('/employeesshow', methods=['GET'])
 @log_api_call

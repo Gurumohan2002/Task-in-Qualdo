@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT CLASSES</title>
+  </head>
+  <body>
+    <h2>Javascript classes</h2>
+    <p>Pass a parameter into the "whichyear()" method.</p>
+
+    <p id="demo"></p>
+
+    <script>
+      class Class {
+        constructor(name, dpt, year) {
+          this.name = name;
+          this.dpt = dpt;
+          this.year = year;
+        }
+        whichyear(x) {
+          return x - this.year;
+        }
+      }
+
+      const date = new Date();
+      let year = date.getFullYear();
+
+      const myName = new Class("Guru", "CSE", 2021);
+      document.getElementById("demo").innerHTML =
+        "I am " +
+        myName.name +
+        " and I am studying " +
+        myName.whichyear(year) +
+        " years in " +
+        myName.dpt +
+        " Department.";
+    </script>
+  </body>
+</html>

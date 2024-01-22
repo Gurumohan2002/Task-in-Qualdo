@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT STATEMENTS</title>
+  </head>
+  <body>
+    <h1>Statements</h1>
+
+    <button onclick="switchCase()">Enter a arithmetic operators</button>
+    <br /><br />
+    <button onclick="ifElse()">Even Number or Odd Number</button>
+    <div id="statements"></div>
+    <script>
+      // Function using Switch case
+      function switchCase() {
+        // user input for arithmetic operations
+
+        var a = prompt("Enter first number:");
+        var b = prompt("Enter second number:");
+        let userInput = prompt("Enter a arithmetic operator '+','-','*','/' :");
+
+        switch (userInput) {
+          case "+":
+            alert(a + b);
+            break;
+          case "-":
+            alert(a - b);
+            break;
+          case "*":
+            alert(a * b);
+            break;
+          case "/":
+            alert(a / b);
+            break;
+          default:
+            alert("Invalid arithmetic operations.");
+            break;
+        }
+      }
+
+      // Function using if else loop
+      function ifElse() {
+        // Get user input
+        var userInput = prompt("Enter a number:");
+        var userNumber = parseFloat(userInput);
+        if (isNaN(userNumber)) {
+          alert("Invalid input. Please enter a valid number.");
+        } else {
+          if (userNumber % 2 == 0) {
+            alert("Even Number");
+            return 1;
+          } else {
+            alert("Odd Number");
+            return 0;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

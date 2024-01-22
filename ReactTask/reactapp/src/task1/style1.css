@@ -1,0 +1,44 @@
+form {
+    width: 300px; /* Adjust width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure consistent sizing */
+    margin-bottom: 10px;
+  }
+  
+  button[type="submit"] {
+    background-color: #26cdfc;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Styling for radio buttons */
+  input[type="radio"] {
+    margin-right: 5px; /* Adjust spacing between radio buttons */
+  }
+  
+  h3 {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
